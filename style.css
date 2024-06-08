@@ -2,7 +2,7 @@ body {
     background: #E5E5E5;
 }
 
-body, input, button, select, textarea {
+body, input, select, textarea {
     font-family: "Poppins", sans-serif;
 }
 
@@ -179,8 +179,6 @@ fieldset legend {
 
 footer {
     background: #F0F0F4;
-    
-    height: 136px;
 
     display: flex;
     flex-direction: column;
@@ -190,8 +188,27 @@ footer {
     margin-bottom: 100px;
 
     border-top: 1px solid #D6D6D6;
+    border-radius: 0 0 8px 8px;
 }
 
 footer .button {
     height: 56px;
+    background-color: #04D361;
+    
+    font-family: "Archivo", sans-serif;
+    color: white;
+    
+    border: 1px solid #F0F0F4;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+footer .button:hover {
+    background-color: #00b150;
+}
+
+input:invalid {
+    border: 1px solid red;
 }
